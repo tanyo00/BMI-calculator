@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-app {
+  background: #333;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-app .inner-container {
+  width: 50%;
+  height: 70vh;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-app .inner-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-app .inner-container {
+    width: 90%;
+  }
+}
+
+.container-app .inner-container h1 {
+  font-size: 40px;
+  color: white;
+  text-shadow: 3px 3px 6px #333;
+}
+
+@media screen and (max-width: 380px) {
+  .container-app .inner-container h1 {
+    font-size: 30px;
+  }
+}
+
+.container-app .inner-container input {
+  border-radius: 5px;
+  border: none;
+  border: 1px solid lightgray;
+  padding: 10px;
+  width: 60%;
+  font-size: 15px;
+  margin: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  .container-app .inner-container input {
+    width: 80%;
+  }
+}
+
+.container-app .inner-container button {
+  margin: 4%;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  color: whitesmoke;
+  background: dodgerblue;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-app .inner-container button:hover, .container-app .inner-container button:active {
+  background: blue;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+/*# sourceMappingURL=styles.css.map */
